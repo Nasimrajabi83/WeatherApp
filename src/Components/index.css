@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tektur:wght@400..900&family=Vazirmatn:wght@100..900&display=swap');
+
+:root{
+--nav-color-dark: rgb(5, 22, 62);
+--nav-color-light: #bddffef4;
+--content-color-dark:#052040;
+--content-color-light:#b2b4b749;
+--sun-light:#fbc105;
+--cloud-light:#4ba9fb;
+--cloud-dark:#fbfcfdf8;
+}
+.font{
+  font-family: "Tektur", sans-serif;
+}
+.fontnav{
+  font-family: "Tektur", sans-serif;
+  font-size: x-large;
+  padding-top: 13px;
+}
+.glass-navbar {
+  position: sticky;
+  margin: 0 !important;
+  top: 0;
+  right: 0 !important;
+  z-index: 1000;
+  gap: 30px;
+  background: var(--nav-color-light) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 1px;
+  margin: 12px auto;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid rgba(102, 102, 106, 0.386);
+  box-shadow: 0 8px 32px rgba(65, 65, 66, 0.132);
+}
+.glass-navbar.scrolled{
+  background-color: #fff;
+  backdrop-filter: none !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.icon{
+  color: #28597ad2 !important;
+  margin-left: -80px;
+}
+.icon-stack{
+  position: relative;
+  width: 56px;
+  height: 36px;
+}
+.sunicon{
+  color: var(--sun-light);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cloudicon{
+  color: var(--cloud-light);
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+
+.theme-toggle-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.theme-toggle-icon {
+  transition: transform 0.2s ease;
+}
+
+.theme-toggle-icon:hover {
+  transform: scale(1.2);
+}
+.nav-link-custom {
+  color: #28597ad2  !important;
+  font-family: 'Rubik',sans-serif;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #8f9aa1 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.dark-theme .content{
+  background:var(--content-color-dark);
+}
+
+.dark-theme .glass-navbar,
+.dark-theme .navbar {
+  background:var(--nav-color-dark) !important;
+  color: #f0f0f0 !important;
+}
+.dark-theme p{
+  color: #88898a;
+}
+.dark-theme .cloudicon{
+  color: var(--cloud-dark);
+}
+.dark-theme .card,
+.dark-theme .weather-card,
+.dark-theme .weather-card * {
+  background: rgba(50, 50, 50, 0.5) !important;
+  color: #f0f0f0 !important;
+}
+.card,
+.weather-card,
+.weather-card * {
+  background: var(--nav-color-light)!important;
+}
+
+.dark-theme .nav-link-custom,
+.dark-theme .nav-link {
+  color:#659ced !important;
+}
+
+.dark-theme .nav-link-custom:hover,
+.dark-theme .nav-link:hover {
+  color: #7ecafc !important;
+}
+.search-box {
+  max-width: 400px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 50px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.content{
+  background-attachment: scroll;
+  min-width: 100vh;
+  width: 100%;
+  background-color: var(--content-color-light);
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  left: 0px;
+  margin-top: 10vh;
+flex-direction: column;
+margin: 0;
+}
+
+.search-input {
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+
+.search-input::placeholder {
+  color: #ccc;
+}
+
+.search-input:focus {
+  box-shadow: none;
+  background: transparent;
+  color: #fff;
+}
+
+.search-btn {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+
+}
+
+.search-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+.descroption{
+  color: var(--nav-color-dark);
+  font-weight: bold;
+}
+
+.dark-theme .descroption{
+  color: var(--nav-color-light);
+  font-weight: bold;
+}
+.wname{
+  color: var(--nav-color-dark);
+  font-size: x-large;
+}
+.dark-theme  .wname{
+  color: var(--nav-color-light);
+  font-size: x-large;
+}
+
